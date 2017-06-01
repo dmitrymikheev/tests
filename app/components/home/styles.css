@@ -1,0 +1,15 @@
+.textarea {
+  width: 100%;
+  height: 150px !important;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-bottom: 10px;
+}
+
+.success {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}

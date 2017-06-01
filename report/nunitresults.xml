@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<test-results name="Jasmine Results" total="2" failures="2" not-run="0" date="2017-06-02" time="00:31:31">
+ <test-suite name="singleton" executed="true" success="false" time="0.123">
+  <results>
+   <test-case name="encountered a declaration exception" executed="true" success="false" time="0.098">
+    <failure>
+     <message><![CDATA[ReferenceError: Singleton is not defined]]></message>
+     <stack-trace><![CDATA[ReferenceError: Singleton is not defined
+    at Suite.eval (eval at fs.readFile (/Users/dmitrymikheev/src/tests/server.js:73:9), <anonymous>:4:23)
+    at addSpecsToSuite (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:994:25)
+    at Env.describe (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:961:7)
+    at describe (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3999:18)
+    at eval (eval at fs.readFile (/Users/dmitrymikheev/src/tests/server.js:73:9), <anonymous>:2:7)
+    at fs.readFile (/Users/dmitrymikheev/src/tests/server.js:73:9)
+    at tryToString (fs.js:449:3)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:436:12)]]></stack-trace>
+    </failure>
+   </test-case>
+  </results>
+ </test-suite>
+ <test-suite name="singleton" executed="true" success="false" time="0.097">
+  <results>
+   <test-case name="encountered a declaration exception" executed="true" success="false" time="0.087">
+    <failure>
+     <message><![CDATA[ReferenceError: Singleton is not defined]]></message>
+     <stack-trace><![CDATA[ReferenceError: Singleton is not defined
+    at Suite.<anonymous> (/Users/dmitrymikheev/src/tests/spec.js:4:23)
+    at addSpecsToSuite (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:994:25)
+    at Env.describe (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:961:7)
+    at describe (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3999:18)
+    at Object.<anonymous> (/Users/dmitrymikheev/src/tests/spec.js:2:7)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at /Users/dmitrymikheev/src/tests/node_modules/jasmine/lib/jasmine.js:93:5
+    at Array.forEach (native)
+    at Jasmine.loadSpecs (/Users/dmitrymikheev/src/tests/node_modules/jasmine/lib/jasmine.js:92:18)
+    at Jasmine.execute (/Users/dmitrymikheev/src/tests/node_modules/jasmine/lib/jasmine.js:197:8)]]></stack-trace>
+    </failure>
+   </test-case>
+  </results>
+ </test-suite>
+</test-results>

@@ -1,0 +1,8 @@
+/* stylelint-disable */
+.navbar-nav li > a {
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+/* stylelint-enable */
