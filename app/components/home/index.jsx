@@ -51,6 +51,12 @@ class Home extends React.Component {
             >
               Decorator
             </Button>
+            <Button
+              className={ cn({ active: this.state.type === 'observer' }) }
+              onClick={ () => this.changeType('observer') }
+            >
+              Observer
+            </Button>
           </ButtonToolbar>
           <pre>{tests[this.state.type]}</pre>
           <FormControl

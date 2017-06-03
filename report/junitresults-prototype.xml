@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
- <testsuite name="prototype" timestamp="2017-06-02T01:22:19" hostname="localhost" time="0.002" errors="0" tests="2" skipped="0" disabled="0" failures="0">
-  <testcase classname="prototype" name="should have method walk" time="0.001" />
-  <testcase classname="prototype" name="should be instanceof Animal" time="0.001" />
+ <testsuite name="prototype" timestamp="2017-06-02T14:17:17" hostname="localhost" time="0" errors="0" tests="1" skipped="0" disabled="0" failures="1">
+  <testcase classname="prototype" name="encountered a declaration exception" time="0">
+   <failure type="exception" message="ReferenceError: Rabbit is not defined"><![CDATA[ReferenceError: Rabbit is not defined
+    at Suite.<anonymous> (/Users/dmitrymikheev/src/tests/spec.js:38:26)
+    at addSpecsToSuite (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:994:25)
+    at Env.describe (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:961:7)
+    at describe (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3999:18)
+    at Object.<anonymous> (/Users/dmitrymikheev/src/tests/spec.js:2:7)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at /Users/dmitrymikheev/src/tests/node_modules/jasmine/lib/jasmine.js:93:5
+    at Array.forEach (native)
+    at Jasmine.loadSpecs (/Users/dmitrymikheev/src/tests/node_modules/jasmine/lib/jasmine.js:92:18)
+    at Jasmine.execute (/Users/dmitrymikheev/src/tests/node_modules/jasmine/lib/jasmine.js:197:8)]]>
+   </failure>
+  </testcase>
  </testsuite>
 </testsuites>

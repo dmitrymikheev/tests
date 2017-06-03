@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="observer" timestamp="2017-06-03T19:18:08" hostname="localhost" time="0.013" errors="0" tests="7" skipped="0" disabled="0" failures="2">
+  <testcase classname="observer" name="have subscribeObserver method" time="0" />
+  <testcase classname="observer" name="have unsubscribeObserver method" time="0.001" />
+  <testcase classname="observer" name="have notifyObserver method" time="0.001" />
+  <testcase classname="observer" name="have notifyAllObservers method" time="0" />
+  <testcase classname="observer" name="should have observers" time="0.002" />
+  <testcase classname="observer" name="should notify observer1" time="0.002">
+   <failure type="exception" message="Error: &lt;spyOn&gt; : notify() method does not exist
+Usage: spyOn(&lt;object&gt;, &lt;methodName&gt;)"><![CDATA[Error: <spyOn> : notify() method does not exist
+Usage: spyOn(<object>, <methodName>)
+    at SpyRegistry.spyOn (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4340:15)
+    at Env.spyOn (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:925:32)
+    at spyOn (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4171:18)
+    at Object.eval (eval at fs.readFile (/Users/dmitrymikheev/src/tests/server.js:75:9), <anonymous>:78:3)
+    at attemptSync (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3877:24)
+    at QueueRunner.run (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3866:9)
+    at QueueRunner.execute (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3851:10)
+    at Spec.queueRunnerFactory (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:816:35)
+    at Spec.execute (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:473:10)
+    at Object.fn (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4943:37)
+    at attemptAsync (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3914:24)
+    at QueueRunner.run (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3863:9)
+    at /Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3894:16
+    at /Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3827:9
+    at QueueRunner.complete [as onComplete] (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:485:9)
+    at Immediate.<anonymous> (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3872:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="observer" name="should notify all observers" time="0.001">
+   <failure type="exception" message="Error: &lt;spyOn&gt; : notify() method does not exist
+Usage: spyOn(&lt;object&gt;, &lt;methodName&gt;)"><![CDATA[Error: <spyOn> : notify() method does not exist
+Usage: spyOn(<object>, <methodName>)
+    at SpyRegistry.spyOn (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4340:15)
+    at Env.spyOn (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:925:32)
+    at spyOn (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4171:18)
+    at Object.eval (eval at fs.readFile (/Users/dmitrymikheev/src/tests/server.js:75:9), <anonymous>:86:3)
+    at attemptSync (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3877:24)
+    at QueueRunner.run (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3866:9)
+    at QueueRunner.execute (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3851:10)
+    at Spec.queueRunnerFactory (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:816:35)
+    at Spec.execute (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:473:10)
+    at Object.fn (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4943:37)
+    at attemptAsync (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3914:24)
+    at QueueRunner.run (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3863:9)
+    at /Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3894:16
+    at /Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3827:9
+    at QueueRunner.complete [as onComplete] (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:485:9)
+    at Immediate.<anonymous> (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3872:12)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="observer.oberser1" timestamp="2017-06-03T19:18:08" hostname="localhost" time="0.003" errors="0" tests="1" skipped="0" disabled="0" failures="1">
+  <testcase classname="observer.oberser1" name="should have notify method" time="0.002">
+   <failure type="toBeDefined" message="Expected undefined to be defined."><![CDATA[Error: Expected undefined to be defined.
+    at stack (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:2155:17)
+    at buildExpectationResult (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:2125:14)
+    at Spec.expectationResultFactory (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:766:18)
+    at Spec.addExpectationResult (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:444:34)
+    at Expectation.addExpectationResult (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:710:21)
+    at Expectation.toBeDefined (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:2078:12)
+    at Object.eval (eval at fs.readFile (/Users/dmitrymikheev/src/tests/server.js:75:9), <anonymous>:101:30)
+    at attemptSync (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3877:24)
+    at QueueRunner.run (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3866:9)
+    at QueueRunner.execute (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3851:10)
+    at Spec.queueRunnerFactory (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:816:35)
+    at Spec.execute (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:473:10)
+    at Object.fn (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4943:37)
+    at attemptAsync (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3914:24)
+    at QueueRunner.run (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3863:9)
+    at QueueRunner.execute (/Users/dmitrymikheev/src/tests/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3851:10)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>
