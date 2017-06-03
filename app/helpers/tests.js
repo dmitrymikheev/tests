@@ -2,6 +2,10 @@ const singleton = `
 var singleA = Singleton.getInstance();
 var singleB = Singleton.getInstance();
 
+it('should have getInstance method', function() {
+  expect(Singleton.getInstance).toBeDefined();
+});
+
 it('random variable should be equal', function() {
   expect(singleA.getRandomNumber()).toEqual(singleB.getRandomNumber());
 });
@@ -10,24 +14,47 @@ it('random variable should be equal', function() {
 const decorator = `
 var mb = new MacBook();
 
-memory(mb);
-engraving(mb);
-insurance(mb);
+it("macbook should have cost", function() {
+  expect(mb.cost()).toEqual(997)
+});
 
-it('macbook should have cost', function() {
+it("macbook should have new cost", function() {
+  memory(mb);
+  expect(mb.cost()).toEqual(1072);
+});
+
+it("macbook should have new cost", function() {
+  engraving(mb);
+  expect(mb.cost()).toEqual(1272);
+});
+
+it("macbook should have new cost", function() {
+  insurance(mb);
   expect(mb.cost()).toEqual(1522);
 });
 `;
 
 const prototype = `
-var rabbit = new Rabbit('Rabbit');
-rabbit.walk();
+var rabbit = new Rabbit("Rabbit");
 
-it('should have method walk', function() {
+it("Animal should have walk method", function() {
+  var animal = new Animal;
+  expect(animal.walk).toBeDefined();
+});
+
+it("should have method walk", function() {
   expect(rabbit.walk).toBeDefined();
 });
 
-it('should be instanceof Animal', function() {
+it("walk method should have been called", function() {
+  spyOn(rabbit, "walk");
+
+  rabbit.walk();
+
+  expect(rabbit.walk).toHaveBeenCalled();
+});
+
+it("should be instanceof Animal", function() {
   expect(rabbit instanceof Animal).toBe(true);
 });
 `;
