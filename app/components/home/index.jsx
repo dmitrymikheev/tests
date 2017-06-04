@@ -30,7 +30,7 @@ class Home extends React.Component {
   };
 
   submitCode = () => {
-    this.props.sendCode(this.state.code, this.state.type);
+    this.props.sendCode(this.state.code[this.state.type], this.state.type);
   };
 
   changeType = type => {
@@ -89,10 +89,12 @@ class Home extends React.Component {
             </Row>
           </Grid>
           <Grid><Button onClick={ this.submitCode }>Submit</Button></Grid>
-          {!this.props.reporter.success &&
-            this.props.reporter.isRequested &&
-            <JSONTree data={ this.props.reporter.result } shouldExpandNode={ () => true } />}
-          {this.props.reporter.success && <p className={ styles.success }>Success</p>}
+          <Grid>
+            {!this.props.reporter.success &&
+              this.props.reporter.isRequested &&
+              <JSONTree data={ this.props.reporter.result } shouldExpandNode={ () => true } />}
+            {this.props.reporter.success && <p className={ styles.success }>Success</p>}
+          </Grid>
         </Jumbotron>
       </Grid>
     );
